@@ -24,7 +24,7 @@
 'use strict';
 
 
-    const numberOfFilms = window.prompt("Сколько фильмов вы уже посмотрели?", "2");
+    const numberOfFilms = window.prompt('Сколько фильмов вы уже посмотрели?', '2');
 
     let personalMovieDB = {
         'count': numberOfFilms,
@@ -42,4 +42,3 @@
    personalMovieDB.movies[a] = b;
    personalMovieDB.movies[c] = d;
    console.log(personalMovieDB);
-
