@@ -23,3 +23,34 @@
 
 'use strict';
 
+if (typeof window !== "undefined") {
+    const numberOfFilms = window.prompt("Сколько фильмов вы уже посмотрели?", "2");
+
+    let personalMovieDB = {
+        'count': numberOfFilms,
+        'movies': {},
+        'actors': {},
+        genres: [],
+        privat: false
+    };
+
+    let answerOne;
+    answerOne = askQuestions();
+    personalMovieDB.movies = answerOne;
+    console.log(personalMovieDB.movies);
+
+    let answerTwo;
+    answerTwo = askQuestions();
+    personalMovieDB.movies = answerTwo;
+    console.log(personalMovieDB.movies);
+}
+
+function askQuestions() {
+
+    let filmName = window.prompt("Один из последних просмотренных фильмов?", "");
+    let filmRating = window.prompt("Rating", "0.0");
+    let answer = {
+        [filmName]: filmRating
+    };
+    return answer;
+}
