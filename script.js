@@ -23,7 +23,7 @@
 
 'use strict';
 
-if (typeof window !== "undefined") {
+
     const numberOfFilms = window.prompt("Сколько фильмов вы уже посмотрели?", "2");
 
     let personalMovieDB = {
@@ -42,4 +42,4 @@ if (typeof window !== "undefined") {
    personalMovieDB.movies[a] = b;
    personalMovieDB.movies[c] = d;
    console.log(personalMovieDB);
-}
+
